@@ -1,0 +1,32 @@
+Basic Regex Syntax:
+Literal Characters: Matches the exact characters.
+
+Example: "hello" matches the string "hello".
+Meta Characters: Special characters that have specific meanings.
+
+. : Matches any character except newline.
+^ : Matches the start of the string.
+$ : Matches the end of the string.
+[] : Matches any character in the brackets.
+\ : Escapes special characters.
+Quantifiers: Specify how many times a character or group should appear.
+
+* : 0 or more occurrences.
++ : 1 or more occurrences.
+? : 0 or 1 occurrence.
+{n} : Exactly n occurrences.
+{n,} : n or more occurrences.
+{n,m} : Between n and m occurrences.
+Character Classes:
+
+\d : Any digit (0-9).
+\D : Any non-digit character.
+\w : Any word character (letters, digits, underscore).
+\W : Any non-word character.
+\s : Any whitespace character (spaces, tabs).
+\S : Any non-whitespace character.
+
+
+Example Patterns:
+re.match(r"\d+", "123abc")  # Matches "123"
+re.match(r"\w+@\w+\.\w+", "test@example.com")  # Matches email format
